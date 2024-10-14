@@ -1,2 +1,2 @@
 # weather-and-todolist
- Небольшое тестовое задание - weather + todo list
+Тестовое задание - weather + todo list
