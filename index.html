@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/weather-icons.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Summer momentum</title>
+  </head>
+  <body>
+    <div class="dashboard bg-morning">
+      <div class="header">
+        <div class="btn-weather">
+          <i class="fa fa-spinner fa-pulse" aria-hidden="true"></i> Погода
+        </div>
+        <div class="weather bg-popup">... Подробная погода</div>
+      </div>
+      <div class="main">
+        <div class="date-time">
+          <div class="time">{часы:минуты:секунды}</div>
+          <div class="date">{день месяц, день недели}</div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="btn-todo-list">Список задач</div>
+        <div class="todo-list bg-popup flex flex-column gap-m">
+          <div>
+            <input class="new-item" placeholder="Добавить задачу" type="text" />
+            <button class="add-new-item">Добавить</button>
+          </div>
+          <h3>Задачи</h3>
+          <div class="incomplete-tasks flex flex-column"></div>
+          <h3>Выполненые</h3>
+          <div class="completed-tasks flex flex-column"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
